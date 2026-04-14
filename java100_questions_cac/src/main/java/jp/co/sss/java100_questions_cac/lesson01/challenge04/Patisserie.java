@@ -28,6 +28,53 @@
 
 package jp.co.sss.java100_questions_cac.lesson01.challenge04;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Patisserie {
+	public static void main(String[] args) throws IOException {
+
+		int citro = 30;
+
+		int choco = 30;
+
+		int pis = 30;
+
+		System.out.println("たいへんお待たせしました。");
+		System.out.println("【ポエール・ネルメ】");
+		System.out.println("ただいまより開店です！！");
+
+		System.out.println("\n本日のおすすめ商品です。\n");
+
+		System.out.println("シトロン　　　\\250・・・残り" + citro + "個");
+		System.out.println("ショコラ　　　\\280・・・残り" + choco + "個");
+		System.out.println("ピスターシュ　\\320・・・残り" + pis + "個");
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		//		以降解答見たよぉん
+
+		System.out.println("\nそれぞれ何個ずつ買いますか？（最大30個まで）\n");
+		System.out.print("シトロン      >");
+		String citronBuy = br.readLine();
+		int citronBuyCount = Integer.parseInt(citronBuy);
+
+		System.out.print("ショコラ      >");
+		String chocolatBuy = br.readLine();
+		int chocolatBuyCount = Integer.parseInt(chocolatBuy);
+
+		System.out.print("ピスターシュ  >");
+		String pistacheBuy = br.readLine();
+		int pistacheBuyCount = Integer.parseInt(pistacheBuy);
+
+		System.out.println("\nシトロン     " + citronBuyCount + "個");
+		System.out.println("ショコラ     " + chocolatBuyCount + "個");
+		System.out.println("ピスターシュ " + pistacheBuyCount + "個");
+
+		System.out.println("\nをお買いあげですね。");
+		System.out.println("承りました。");
+
+	}
 
 }
